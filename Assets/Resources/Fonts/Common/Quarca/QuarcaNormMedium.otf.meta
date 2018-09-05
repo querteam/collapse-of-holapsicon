@@ -1,0 +1,45 @@
+fileFormatVersion: 2
+guid: 97a9b2211bb5c10439754f1721b25858
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Quarca
+  fontNames:
+  - Quarca
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 74cb2e20b041adf459e22d260dd1fbf7, type: 3}
+  - {fileID: 12800000, guid: 32259c30d3b55574c9e747287bb1e5d8, type: 3}
+  - {fileID: 12800000, guid: 44a239a33d1a0b24aab89a91f6c8375b, type: 3}
+  - {fileID: 12800000, guid: 492f2064542f6eb40af7a24994a4a645, type: 3}
+  - {fileID: 12800000, guid: 92b436c4103bb1140bec9ca894860270, type: 3}
+  - {fileID: 12800000, guid: 60296df4a23a01a4193cf6e580268d23, type: 3}
+  - {fileID: 12800000, guid: 8dcbaee6bcdf3d746a1150a165b2acfe, type: 3}
+  - {fileID: 12800000, guid: 75802247044ceee4ab0a0a8309c950db, type: 3}
+  - {fileID: 12800000, guid: 4f3dafc7a31a18842b51a80773fc5780, type: 3}
+  - {fileID: 12800000, guid: 619e44d7cb15c1c4a9ddaf4289577c05, type: 3}
+  - {fileID: 12800000, guid: 1c073738d4b75974081031ae8d9b211d, type: 3}
+  - {fileID: 12800000, guid: 634c52488072bc64daa7500fc61c1535, type: 3}
+  - {fileID: 12800000, guid: 71b92ee9bc3f605418e52dbcfc20b6b6, type: 3}
+  - {fileID: 12800000, guid: 5bc18b2afd7fb644eb52db4048f3aa1f, type: 3}
+  - {fileID: 12800000, guid: 4825e9daf0efc8748952eff29230c5be, type: 3}
+  - {fileID: 12800000, guid: 200351add8493aa4084a204cf68f7e15, type: 3}
+  - {fileID: 12800000, guid: 0f455abd2872a8c4989928ffb41e5c2b, type: 3}
+  - {fileID: 12800000, guid: 211cc86e1e7362f41a00e3da2837a387, type: 3}
+  - {fileID: 12800000, guid: 325c21ee27b4db04689dda57a8821e73, type: 3}
+  - {fileID: 12800000, guid: 8881c36f55e267548b83c87acc340c82, type: 3}
+  - {fileID: 12800000, guid: 8513349f1c253ea4f818101e30ac7e86, type: 3}
+  - {fileID: 12800000, guid: 10661c9f87a98f24a8c6ba0e03558377, type: 3}
+  - {fileID: 12800000, guid: 3d7f56ff6662a364ea22786a0e88165d, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

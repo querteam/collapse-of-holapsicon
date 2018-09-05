@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Localization Lang="English" ShortLang="en" Version="0.0.1">
+  <Scope Name="menu.main"></Scope>
+  <Scope Name="common">
+    <string Name="youHaveDaysToBuild">
+      <insert>
+        <item Index="0">
+          <option DataType="number" Format="equ 1">day</option>
+          <option DataType="number" Format="~">days</option>
+        </item>
+        <item Index="1">
+          <option DataType="string"></option>
+        </item>
+      </insert>
+    <string>
+  </Scope>
+</Localization>

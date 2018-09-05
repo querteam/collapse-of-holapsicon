@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Localization name="English" version="0.0.1">
+  <Scope name="menu.main">
+    <Item name="storymode-enter">Story</Item>
+    <Item name="multiplayermode-enter">Multiplayer</Item>
+    <Item name="preferences">Preferences</Item>
+    <Item name="credits">Credits</Item>
+    <Item name="quit">Quit</Item>
+  </Scope>
+  <Scope name="test">
+    <Item name="test">Test</Item>
+  </Scope>
+</Localization>

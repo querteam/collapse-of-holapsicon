@@ -1,0 +1,20 @@
+﻿<Localization name="Русский" version="0.0.1">
+  <Where name="menu.main">
+    <Item name="company">История</Item>
+    <Item name="multiplayer">Онлайн</Item>
+    <Item name="preferences">Настройки</Item>
+    <Item name="credits">Авторы</Item>
+    <Item name="quit">Выйти</Item>
+  </Where>
+  <Where name="menu.quick">
+    <Item name="close">Продолжить</Item>
+    <Item name="Save">Сохранить</Item>
+    <Item name="load">Загрузить</Item>
+    <Item name="preferences">Настройки</Item>
+    <Item name="quit">Покинуть Игру</Item>
+  </Where>
+  <Where name="matchmaker">
+    <Item name="create">Создать комнату</Item>
+    <Item name="join">Присоедениться</Item>
+  </Where>
+</Localization>

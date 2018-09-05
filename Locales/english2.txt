@@ -1,0 +1,26 @@
+
+Localization.Translate(CurrentLanguage).For("you-have-days-to-build", 0, "it");
+
+class Translation
+{
+  public string Language();
+
+  public string For(string snippet, params object[] options)
+  {
+    
+  }
+}
+
+class Localization
+{
+  private Translation[] translations;
+
+  public Translation Translate(string language)
+  {
+    return translations.First(item => item.Language == language);
+  }
+}
+
+youHaveDaysToBuild(0, "it") -> You have 0 days to build it
+youHaveDaysToBuild(1, "it") -> You have 1 day to build it
+youHaveDaysToBuild(2, "it") -> You have 2 days to build it

@@ -1,0 +1,20 @@
+﻿<Localization for="French" version="0.0.1">
+  <Where name="menu.main">
+    <Item name="company">Story</Item>
+    <Item name="multiplayer">Multijoueur</Item>
+    <Item name="preferences">Préférences</Item>
+    <Item name="credits">Crédits</Item>
+    <Item name="quit">Quitter</Item>
+  </Where>
+  <Where name="menu.quick">
+    <Item name="close">Continuer</Item>
+    <Item name="Save">Enregistrer</Item>
+    <Item name="load">Charger</Item>
+    <Item name="preferences">Préférences</Item>
+    <Item name="quit">Quitter le jeu</Item>
+  </Where>
+  <Where name="matchmaker">
+    <Item name="create">Créer une Chambre</Item>
+    <Item name="join">Joindre</Item>
+  </Where>
+</Localization>

@@ -1,0 +1,25 @@
+fileFormatVersion: 2
+guid: 200351add8493aa4084a204cf68f7e15
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Quarca
+  fontNames:
+  - Quarca
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 1c073738d4b75974081031ae8d9b211d, type: 3}
+  - {fileID: 12800000, guid: 0f455abd2872a8c4989928ffb41e5c2b, type: 3}
+  - {fileID: 12800000, guid: 10661c9f87a98f24a8c6ba0e03558377, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

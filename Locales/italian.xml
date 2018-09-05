@@ -1,0 +1,20 @@
+﻿<Localization for="Italian" version="0.0.1">
+  <Where name="menu.main">
+    <Item name="company">Storia</Item>
+    <Item name="multiplayer">Multiplayer</Item>
+    <Item name="preferences">Preferenze</Item>
+    <Item name="credits">Crediti</Item>
+    <Item name="quit">Quit</Item>
+  </Where>
+  <Where name="menu.quick">
+    <Item name="close">Continua</Item>
+    <Item name="save">Salvare</Item>
+    <Item name="load">Caricare</Item>
+    <Item name="preferences">Preferenze</Item>
+    <Item name="quit">Lascia il gioco</Item>
+  </Where>
+  <Where name="matchmaker">
+    <Item name="create">Crea una Stanza</Item>
+    <Item name="join">Aderire</Item>
+  </Where>
+</Localization>
