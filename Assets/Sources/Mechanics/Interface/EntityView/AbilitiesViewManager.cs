@@ -14,6 +14,7 @@ namespace Mechanics.Interface.EntityView
 
         public AbilitiesThumbsContainer ThumbsContainer;
         public AbilityView[] slots;
+        public Ability[] abilities;
 
         private void OnValidate()
         {
@@ -22,11 +23,23 @@ namespace Mechanics.Interface.EntityView
             foreach (var slot in slots)
             {
                 slot.controller = this;
+                slot.Clear();
+            }
+        }
+
+        [ContextMenu("Refresh slots")]
+        private void Refresh()
+        {
+            OnValidate();
+            if (abilities.Length > 0)
+            {
+                Add(abilities);
             }
         }
 
         public void Add(Ability[] abilities)
         {
+            this.abilities = abilities;
             var index = 0;
             foreach (var slot in slots)
             {
@@ -43,6 +56,12 @@ namespace Mechanics.Interface.EntityView
             {
                 slot.Clear();
             }
+        }
+
+        public void RemoveAll()
+        {
+            Clear();
+            abilities = null;
         }
 
         public void Sort()
