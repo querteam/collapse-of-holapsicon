@@ -1,17 +1,27 @@
 ﻿using UnityEngine;
+using UnityEngine.Events;
 
 namespace Mechanics.Entities
 {
     public class Stats : MonoBehaviour
     {
-
+        #region Health
+        private float maxHealthPoints;
+        public float MaxHealthPoints;
+        private float healthPoints;
         public float HealthPoints;
-        public float ProtectionPoints;
-        public float ManaPoints;
-
         public float HPRegeneration;
+        #endregion
+
+
+        #region Protection
+        private float maxProtectionPoints;
+        public float MaxProtectionPoints;
+        private float protectionPoints;
+        public float ProtectionPoints;
         public float PPRegeneration;
-        public float MPRegeneraation;
+        #endregion
+
 
         public float Velocity;
         public bool Moveable;
@@ -20,13 +30,44 @@ namespace Mechanics.Entities
         public float AttackCouldown;
         public float AttackDuration;
 
+        public UnityEvent<float, float> OnHealthUpdate;
+        public UnityEvent<float, float> OnProtectionUpdate;
+
+
+        private void Update()
+        {
+            if (MaxHealthPoints != maxHealthPoints)
+            {
+                OnHealthUpdate?.Invoke(maxHealthPoints, MaxHealthPoints);
+                maxProtectionPoints = MaxProtectionPoints;
+            }
+            if (MaxProtectionPoints != maxProtectionPoints)
+            {
+                OnProtectionUpdate?.Invoke(maxProtectionPoints, MaxProtectionPoints);
+                maxProtectionPoints = MaxProtectionPoints;
+            }
+        }
+
+
+        #region Local
 
         public void UpdateRegenerationPoints()
         {
             HPRegeneration = CalculateHealthRegenerationPoints(HealthPoints);
-            MPRegeneraation = CalculateManaRegenerationPoints(ManaPoints);
             PPRegeneration = CalculateProtectionRegenerationPoints(ProtectionPoints);
         }
+
+        public int GetHealthPersentage()
+        {
+            return Mathf.CeilToInt(MaxHealthPoints / HealthPoints * 100);
+        }
+
+        public int GetProtectionPersentage()
+        {
+            return Mathf.CeilToInt(MaxProtectionPoints / ProtectionPoints * 100);
+        }
+    
+        #endregion
 
         #region Static Fields
 
@@ -51,7 +92,10 @@ namespace Mechanics.Entities
         {
             damage = CalculateProtectionOnDamage(protection) - damage;
             if (damage < 0)
+            {
                 damage = 0;
+            }
+
             return damage;
         }
 
@@ -65,18 +109,6 @@ namespace Mechanics.Entities
         public static float CalculateHPOnRegeneration(float healthPoints, float regen)
         {
             return healthPoints + regen;
-        }
-
-        /// <summary>
-        /// Calculate how much mana points we'll have
-        /// after regeneration
-        /// </summary>
-        /// <param name="manaPoints">Actual Mana Points</param>
-        /// <param name="regen">Regeneration Points</param>
-        /// <returns></returns>
-        public static float CalculateMPOnRegeneration(float manaPoints, float regen)
-        {
-            return manaPoints + regen;
         }
 
         /// <summary>
@@ -104,17 +136,6 @@ namespace Mechanics.Entities
 
         /// <summary>
         /// Calculate regeneration points depending on
-        /// count of the mana points
-        /// </summary>
-        /// <param name="manaPoints"></param>
-        /// <returns></returns>
-        public static float CalculateManaRegenerationPoints(float manaPoints)
-        {
-            return manaPoints / 10;
-        }
-
-        /// <summary>
-        /// Calculate regeneration points depending on
         /// count of the protection points
         /// </summary>
         /// <param name="protectionPoints"></param>
@@ -125,7 +146,6 @@ namespace Mechanics.Entities
         }
 
         #endregion
-
 
     }
 }
